@@ -5,6 +5,15 @@
 var mongoose = require('mongoose'),
     Event = mongoose.model('Event');
 
+
+exports.index = function(req, res) {
+    Event.find({}, function(err, event) {
+        if (err)
+            res.send(err);
+        res.json(event);
+    });
+};
+
 exports.list_all_events = function(req, res) {
     Event.find({}, function(err, event) {
         if (err)
