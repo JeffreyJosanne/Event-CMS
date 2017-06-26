@@ -9,7 +9,7 @@ var express = require('express'),
     bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Event');
+mongoose.connect('mongodb://wasim:wasim@ds139122.mlab.com:39122/calendar');
 
 
 app.use(bodyParser.urlencoded({ extended: true })); // Thought of a website earlier, that's okay.
