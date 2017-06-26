@@ -1,0 +1,21 @@
+/**
+ * Created by wasim on 26/6/17.
+ */
+{
+  "name": "nodebootstraper",
+  "version": "0.0.3",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "jade": "*",
+    "method-override": "*",
+    "mongoose": "^4.11.0",
+    "morgan": "*",
+    "serve-favicon": "*",
+    "stylus": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  }
+}
