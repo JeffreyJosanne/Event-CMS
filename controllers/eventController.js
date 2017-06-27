@@ -65,7 +65,7 @@ exports.update_an_event = function(req, res) {
 };
 
 exports.get_an_event = function (req, res) {
-    Event.find({Event_date : req.params.date}, req.body, {new: true}, function(err,event){
+    Event.find(({Event_date : req.body.Event_date}), req.body, {new: true}, function(err,event){
         if(err)
             res.send(err);
         res.json(event);

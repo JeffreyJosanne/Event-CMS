@@ -18,6 +18,6 @@ module.exports = function(app) {
         .put(eventList.update_an_event)
         .delete(eventList.delete_an_event);
 
-    app.route('/getEvent/:date')
-        .get(eventList.get_an_event);
+    app.route('/getEvent')
+        .post(eventList.get_an_event);
 };
