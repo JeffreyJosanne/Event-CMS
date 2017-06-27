@@ -17,4 +17,7 @@ module.exports = function(app) {
         .get(eventList.read_an_event)
         .put(eventList.update_an_event)
         .delete(eventList.delete_an_event);
+
+    app.route('/getEvent/:date')
+        .get(eventList.get_an_event);
 };
